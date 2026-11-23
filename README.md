@@ -3,10 +3,6 @@
 [![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)](https://www.python.org/downloads/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![CI/CD](https://github.com/gagansharma22/Multi-agent-research-system/actions/workflows/ci.yml/badge.svg)](https://github.com/gagansharma22/Multi-agent-research-system/actions/workflows/ci.yml)
-[![CodeQL](https://github.com/gagansharma22/Multi-agent-research-system/actions/workflows/codeql.yml/badge.svg)](https://github.com/gagansharma22/Multi-agent-research-system/actions/workflows/codeql.yml)
-[![Code Coverage](https://codecov.io/gh/gagansharma22/Multi-agent-research-system/branch/main/graph/badge.svg)](https://codecov.io/gh/gagansharma22/Multi-agent-research-system)
-[![Docker](https://img.shields.io/badge/Docker-Ready-blue.svg)](https://hub.docker.com/r/gagansharma22/intellecta-multi-agent)
-[![Streamlit](https://img.shields.io/badge/Streamlit-Deployed-FF4B4B.svg)](https://intellecta.streamlit.app)
 [![Stars](https://img.shields.io/github/stars/gagansharma22/Multi-agent-research-system?style=social)](https://github.com/gagansharma22/Multi-agent-research-system/stargazers)
 
 > **Intellecta** is an advanced, local-first multi-agent AI engine designed to conduct deep web research on any given topic. By orchestrating a network of specialized AI agents built on **LangGraph** and **LangChain**, Intellecta searches the web, scrapes deep resources, compiles a comprehensive markdown report, and subjects it to a rigorous critical review—all powered locally and privately using **Ollama** and **Llama 3.1**.
@@ -121,11 +117,6 @@ docker run -p 8501:8501 \
   intellecta-multi-agent
 ```
 
-Or pull from Docker Hub:
-```bash
-docker pull gagansharma22/intellecta-multi-agent:latest
-```
-
 ---
 
 ## 📁 Project Structure
@@ -133,6 +124,8 @@ docker pull gagansharma22/intellecta-multi-agent:latest
 ```
 Multi-agent-research-system/
 ├── .github/workflows/ci.yml       # CI/CD Pipeline
+├── tests/
+│   └── test_agents.py             # Pytest unit tests
 ├── agents.py                      # Agent definitions (Search, Reader, Writer, Critic)
 ├── app.py                         # Streamlit UI application
 ├── app_screenshot.png             # UI screenshot
@@ -141,6 +134,8 @@ Multi-agent-research-system/
 ├── pipeline.py                    # CLI pipeline entrypoint
 ├── requirements.txt               # Python dependencies
 ├── tools.py                       # Custom tools (web search, scraping)
+├── Dockerfile                     # Docker container specification
+├── docker-entrypoint.sh           # Container entrypoint script
 ├── .env.example                   # Environment template
 ├── .gitignore
 └── README.md
@@ -219,7 +214,6 @@ MIT License - see [LICENSE](LICENSE) for details.
 **Gagan Sharma** - AI/ML Engineer | NLP | GenAI | LLMs
 
 [![GitHub](https://img.shields.io/badge/GitHub-gagansharma22-181717?logo=github)](https://github.com/gagansharma22)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-vnxsh-0077B5?logo=linkedin)](https://linkedin.com/in/vnxsh)
 [![Email](https://img.shields.io/badge/Email-gaganpreetsharma.22@gmail.com-D14836?logo=gmail)](mailto:gaganpreetsharma.22@gmail.com)
 
 ---

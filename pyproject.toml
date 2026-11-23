@@ -65,8 +65,6 @@ docs = [
 Homepage = "https://github.com/gagansharma22/Multi-agent-research-system"
 Repository = "https://github.com/gagansharma22/Multi-agent-research-system"
 Issues = "https://github.com/gagansharma22/Multi-agent-research-system/issues"
-Documentation = "https://gagansharma22.github.io/Multi-agent-research-system/"
-Changelog = "https://github.com/gagansharma22/Multi-agent-research-system/blob/main/CHANGELOG.md"
 
 [tool.setuptools.packages.find]
 where = ["."]
